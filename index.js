@@ -26,5 +26,7 @@ function exactMatch (drivers, condition) {
 }
 
 function exactMatchToList(drivers, condition){
-  return 
+  return exactMatch (drivers, condition).map(function (el){
+    el.name
+  })
 }
